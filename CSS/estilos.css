@@ -1,8 +1,9 @@
-*{
-padding: 0;
-margin: 0;
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); 
+/*mobile first 0px-500px*/
+*{
+    padding: 0;
+    margin:0;
+}
 
 html{
     font-size: 62.5%;
@@ -35,6 +36,8 @@ header{
     padding: 0px;
     position: sticky;
     top: 0px;
+    grid-area: header;
+    display: grid;
 }
 
 ul li {
@@ -49,7 +52,9 @@ a{
     padding: 10px;
 }
 
+/* fin modificacion css bts */
 
+/*  mobile first 0 a 500 */
 
 h1{
     color: #363636;
@@ -93,6 +98,7 @@ footer{
     padding: 80px;
     background-color: #101d2d;
     margin-top: 150px;
+    grid-area: footer;
 
 }
 
@@ -103,68 +109,22 @@ footer{
 
 }
 
-.indexsec1{
-
-    display: flex;
-    flex-direction: column;
-}
-
-.indexsec2{
-
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: row;
-     
-}
-
-.img1{
-
-    width: 50%;
-    padding: 20px;
-    border-radius: 30px;
-}
-
-.indexsec3{
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-}
-
-
 h3{
     font-size: 3rem;
     margin:40px
 }
 
-.img2{
-    width: 50%;
-    padding: 20px;
-    border-radius: 30px;
-
-}
 
 .linkinterno{
     color: #363636;
 }
 
-.img3{
-    width: 50%;
+img{
+    width: 100%;
     padding: 20px;
     border-radius: 30px;
 }
 
-.img4{
-    width: 50%;
-    padding: 20px;
-    border-radius: 30px;
-
-}
-
-.img5{
-    width: 50%;
-    padding: 20px;
-    border-radius: 30px;
-}
 
 .sobremisec1{
     display: flex;
@@ -253,3 +213,94 @@ h3{
      border-radius: 20px;
      margin: 40px;
 }
+
+/* declaro las grid areas */
+
+.indexsec1 {
+grid-area: indexsec1;
+}
+
+.indexsec1 img{
+    width: 100%;
+}
+
+.indexsec2 {
+    
+    grid-area: indexsec2;
+}
+
+.indexsec30{
+
+    grid-area: indexsec30;
+}
+.indexsec33{
+
+    grid-area: indexsec33;
+}
+.indexsec31{
+
+    grid-area: indexsec31;
+}
+
+.indexsection4{
+
+    grid-area: indexsection4;
+}
+
+
+
+.grilla{
+    
+    background-color: #3a3548;
+    margin-bottom: 1.5em;
+    gap:20px;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "indexsec1"
+    "indexsec2"
+    "indexsec30"
+    "indexsec31"
+    "indexsec33"
+    "indexsection4"
+    "footer"
+;
+}
+
+/* media de 500px en adelante */
+
+@media(min-width:500px){
+    .grilla{
+    
+        background-color: #3a3548;
+        margin-bottom: 1.5em;
+        gap:20px;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "indexsec1"
+        "indexsec2"
+        "indexsec30"
+        "indexsec31"
+        "indexsec33"
+        "indexsection4"
+        "footer"
+    ;
+    }
+    .indexsec31{
+        
+        background-color: #00ff00;
+    }
+    .indexsec33{
+        
+        background-color: #0000ff;
+    }
+    
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
