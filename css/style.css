@@ -397,6 +397,7 @@ footer {
 /* pagina usa grid system de bootstrap solo modifique lo necesario*/
 
 .card{
+    position: static;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 20px;
 }
