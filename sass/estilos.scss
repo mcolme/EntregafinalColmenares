@@ -1,8 +1,12 @@
 @import "fuentes";
 @import "generales";
 
+
 /*Paginahome*/
 /*mobile first 0px-500px*/
+$base-color: #101d2d;
+$fixed-sized: 100px;
+
 
 @mixin size($width, $height){
     width: $width;
@@ -22,7 +26,7 @@
 }
 
 .color {
-    background-color: #101d2d;
+    background-color:  $base-color;
     padding: 16px;
 }
 
@@ -32,7 +36,7 @@
 
 
 header {
-    background-color: #101d2d;
+    background-color: $base-color;
     padding: 0px;
     position: sticky;
     top: 0px;
@@ -59,16 +63,6 @@ a {
 
 }
 
-.imgsec {
-    @include size(90%, 90%);
-    border-radius: 0px 100px 100px 0px;
-}
-
-.imgsec2 {
-    @include size(100%,100%);
-    border-radius: 100px 0px 0px 100px;
-}
-
 
 .indexsec1 {
     grid-area: indexsec1;
@@ -89,8 +83,17 @@ a {
     @extend %textocentrado
 }
 
+.imgsec2 {
+    @include size(100%,100%);
+    border-radius: 100px 0px 0px 100px;
+}
+
 .indexsec2 {
     grid-area: indexsec2;
+    img {
+        @include size(90%, 90%);
+        border-radius: 0px 100px 100px 0px;
+    }
 }
 
 .parrafo2 {
@@ -124,6 +127,10 @@ a {
 
 .header {
     grid-area: header;
+}
+.comoTrabajoContainer{
+    margin-left: 50px;
+    margin-right: -50px;
 }
 
 /*Paginahome*/
@@ -285,7 +292,7 @@ a {
 }
 
 .imgSecSb2 {
-    @include size(80%,70%);
+    @include size(100%,70%);
     border-radius: 200px 0px 0px 200px;
 }
 /* grilla sobre mi 0px en adelante /* /*Paginasobremi*/
@@ -393,17 +400,8 @@ a {
     padding: 10px;
 }
 
-.acercar{
-    overflow: visible;
-
-}
-
-.acercar img {
-    transition: all 1.5s;
-}
-
-.acercar:hover img{
-    transform: scale(20px);
+.comotrabajocontainer{
+    margin-left: 100px;
 }
 
 /* Pagina de agendemos */
@@ -411,5 +409,5 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 300px;
+    width: 600px;
 }
