@@ -1,37 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap');
+@import "fuentes";
+@import "generales";
 
 /*Paginahome*/
 /*mobile first 0px-500px*/
-* {
-    padding: 0;
-    margin: 0;
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
 }
 
-html {
-    font-size: 62.5%;
+%textocentrado {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #e6d5e3;
-
+%textoizquierda {
+    padding: 20px;
+    text-align: left;
+    font-size: medium;
 }
 
 .color {
-
     background-color: #101d2d;
     padding: 16px;
-
 }
 
 .logo {
-
-    width: 40px;
-    height: 40px;
-
-
+    @include size(40px, 40px);
 }
 
 
@@ -55,15 +51,7 @@ a {
     padding: 10px;
 }
 
-footer {
-    padding: 20px;
-    background-color: #101d2d;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content:center ;
 
-}
 
 .imghome {
     width: 100%;
@@ -72,14 +60,12 @@ footer {
 }
 
 .imgsec {
-    width: 90%;
-    height: 90%;
+    @include size(90%, 90%);
     border-radius: 0px 100px 100px 0px;
 }
 
 .imgsec2 {
-    width: 100%;
-    height: 100%;
+    @include size(100%,100%);
     border-radius: 100px 0px 0px 100px;
 }
 
@@ -90,23 +76,17 @@ footer {
 
 .titulo1 {
     grid-area: titulo1;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+    @extend %textocentrado
 }
 
 .parrafo1 {
     grid-area: parrafo1;
-    padding: 20px;
-    text-align: left;
-    font-size: medium;
+    @extend %textoizquierda
 }
 
 .titulo2 {
     grid-area: titulo2;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+    @extend %textocentrado
 }
 
 .indexsec2 {
@@ -115,16 +95,12 @@ footer {
 
 .parrafo2 {
     grid-area: parrafo2;
-    padding: 20px;
-    text-align: left;
-    font-size: medium;
+    @extend %textoizquierda
 }
 
 .titulo3 {
     grid-area: titulo3;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+    @extend %textocentrado
 }
 
 .indexsec3 {
@@ -133,9 +109,7 @@ footer {
 
 .parrafo3 {
     grid-area: parrafo3;
-    padding: 20px;
-    text-align: left;
-    font-size: medium;
+    @extend %textoizquierda
 }
 
 .indexsec4 {
@@ -147,10 +121,6 @@ footer {
     font-size: medium;
 }
 
-.footer {
-
-    grid-area: footer;
-}
 
 .header {
     grid-area: header;

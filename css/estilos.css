@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap");
-/*Paginahome*/
-/*mobile first 0px-500px*/
 * {
   padding: 0;
   margin: 0;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
@@ -15,6 +9,34 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #e6d5e3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #101d2d;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: footer;
+}
+
+/*Paginahome*/
+/*mobile first 0px-500px*/
+.titulo3, .titulo2, .titulo1 {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.parrafo3, .parrafo2, .parrafo1 {
+  padding: 20px;
+  text-align: left;
+  font-size: medium;
 }
 
 .color {
@@ -47,15 +69,6 @@ a {
   padding: 10px;
 }
 
-footer {
-  padding: 20px;
-  background-color: #101d2d;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .imghome {
   width: 100%;
   margin-top: 0%;
@@ -79,23 +92,14 @@ footer {
 
 .titulo1 {
   grid-area: titulo1;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
 }
 
 .parrafo1 {
   grid-area: parrafo1;
-  padding: 20px;
-  text-align: left;
-  font-size: medium;
 }
 
 .titulo2 {
   grid-area: titulo2;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
 }
 
 .indexsec2 {
@@ -104,16 +108,10 @@ footer {
 
 .parrafo2 {
   grid-area: parrafo2;
-  padding: 20px;
-  text-align: left;
-  font-size: medium;
 }
 
 .titulo3 {
   grid-area: titulo3;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
 }
 
 .indexsec3 {
@@ -122,9 +120,6 @@ footer {
 
 .parrafo3 {
   grid-area: parrafo3;
-  padding: 20px;
-  text-align: left;
-  font-size: medium;
 }
 
 .indexsec4 {
@@ -134,10 +129,6 @@ footer {
 
 .parrafo4 {
   font-size: medium;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 .header {
