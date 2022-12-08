@@ -183,7 +183,7 @@ a {
   }
   .imgsec {
     width: 90%;
-    height: 90% px;
+    height: 90%;
     border-radius: 0px 100px 100px 0px;
   }
 }
@@ -238,15 +238,15 @@ a {
 }
 
 .imgSecSb {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 70%;
   border-radius: 0px 200px 200px 0px;
   flex-direction: column-reverse;
 }
 
 .imgSecSb2 {
-  width: 100%;
-  height: 90%;
+  width: 80%;
+  height: 70%;
   border-radius: 200px 0px 0px 200px;
 }
 
@@ -280,7 +280,8 @@ a {
   }
   .imgSecSb {
     width: 80%;
-    height: 80%;
+    height: 500px;
+    margin-bottom: 100px;
   }
   .imgSecSb2 {
     width: 100%;
