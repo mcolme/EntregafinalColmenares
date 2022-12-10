@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e6d5e3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #101d2d;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: footer;
+}
+
+/* Media querys-Paginahome*/
+.imghome {
+  width: 100%;
+  margin-top: 0px;
+}
+@media (min-width: 500px) {
+  .imghome {
+    width: 100%;
+  }
+}
+
+.imgsec {
+  width: 90%;
+  height: 90%;
+  border-radius: 0px 100px 100px 0px;
+}
+@media (min-width: 500px) {
+  .imgsec {
+    height: 90px;
+    border-radius: 0px 100px 100px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .imgsec {
+    width: 90%;
+    height: 90%;
+    border-radius: 0px 100px 100px 0px;
+  }
+}
+
+.imgsec2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px 0px 0px 100px;
+}
+@media (min-width: 50px) {
+  .imgsec2 {
+    width: 100%;
+    height: 90%;
+    border-radius: 100px 0px 0px 100px;
+  }
+}
+
+/*Gridareas*/
+.envoltura {
+  background-color: #e6d5e3;
+  margin-bottom: 1.5em;
+  gap: 20px;
+  display: grid;
+  grid-template-areas: "header" "indexsec1" "titulo1" "parrafo1" "titulo2" "indexsec2" "parrafo2" "titulo3" "indexsec3" "parrafo3" "indexsec4" "footer";
+}
+@media (min-width: 500px) {
+  .envoltura {
+    background-color: #e6d5e3;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header       header" "indexsec1    indexsec1" "titulo1      titulo1" "parrafo1     parrafo1" "titulo2      titulo2" "indexsec2    parrafo2" "titulo3      titulo3" "parrafo3     indexsec3" "indexsec4    indexsec4" "footer       footer";
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media (min-width: 768px) {
+  .envoltura {
+    background-color: #e6d5e3;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header      header       header" "indexsec1   indexsec1    indexsec1" "titulo1     titulo1      titulo1" "parrafo1    parrafo1     parrafo1" "titulo2     titulo2      titulo2" "indexsec2   parrafo2     parrafo2" "titulo3     titulo3      titulo3" "parrafo3    indexsec3    indexsec3" "indexsec4   indexsec4    indexsec4" "footer      footer       footer";
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* Media querys-Paginasobremi*/
+/*Gridareas*/
+.envolturasobremi {
+  background-color: #e6d5e8;
+  margin-bottom: 1.5em;
+  gap: 20px;
+  display: grid;
+  grid-template-areas: "header" "titulo1Sobremi" "sobreMisec1" "parrafo1Sobremi" "titulo2Sobremi" "sobreMisec2" "parrafo2Sobremi" "titulo3Sobremi" "sobreMisec3" "parrafo3Sobremi" "footer";
+}
+@media (min-width: 500px) {
+  .envolturasobremi {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header         header" "titulo1Sobremi  titulo1Sobremi" "sobreMisec1     parrafo1Sobremi" "titulo2Sobremi  titulo2Sobremi" "parrafo2Sobremi sobreMisec2" "titulo3Sobremi  titulo3Sobremi" "sobreMisec3     parrafo3Sobremi" "footer footer";
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media (min-width: 768px) {
+  .envolturasobremi {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header           header          header" "titulo1Sobremi   titulo1Sobremi  titulo1Sobremi" "sobreMisec1      sobreMisec1     parrafo1Sobremi" "titulo2Sobremi   titulo2Sobremi  titulo2Sobremi" "parrafo2Sobremi  sobreMisec2     sobreMisec2" "titulo3Sobremi   titulo3Sobremi  titulo3Sobremi" "sobreMisec3      sobreMisec3     parrafo3Sobremi" "footer           footer          footer";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.imgSecSb {
+  width: 80%;
+  height: 70%;
+  border-radius: 0px 200px 200px 0px;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .imgSecSb {
+    width: 100%;
+    height: 420px;
+    margin-bottom: 100px;
+  }
+}
+
+.imgSecSb2 {
+  width: 100%;
+  height: 70%;
+  border-radius: 200px 0px 0px 200px;
+}
+@media (min-width: 768px) {
+  .imgSecSb2 {
+    width: 100%;
+    height: 80%;
+    border-radius: 200px 0px 0px 200px;
+  }
+}
+
+.titulo3, .titulo2, .titulo1 {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.parrafo3, .parrafo2, .parrafo1 {
+  padding: 20px;
+  text-align: left;
+  font-size: medium;
+}
+
+.color {
+  background-color: #101d2d;
+  padding: 16px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+header {
+  background-color: #101d2d;
+  padding: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+ul li {
+  font-size: 14px;
+  padding-right: 14px;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+/*Paginahome*/
+.indexsec1 {
+  grid-area: indexsec1;
+}
+
+.titulo1 {
+  grid-area: titulo1;
+}
+
+.parrafo1 {
+  grid-area: parrafo1;
+}
+
+.titulo2 {
+  grid-area: titulo2;
+}
+
+.indexsec2 {
+  grid-area: indexsec2;
+}
+.indexsec2 img {
+  width: 90%;
+  height: 90%;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.parrafo2 {
+  grid-area: parrafo2;
+}
+
+.titulo3 {
+  grid-area: titulo3;
+}
+
+.indexsec3 {
+  grid-area: indexsec3;
+}
+
+.parrafo3 {
+  grid-area: parrafo3;
+}
+
+.indexsec4 {
+  grid-area: indexsec4;
+  padding: 20px;
+}
+
+.parrafo4 {
+  font-size: medium;
+}
+
+.header {
+  grid-area: header;
+}
+
+/* Fin pagina de home */
+/* Inicio Pagina sobre mi */
+.titulo1Sobremi {
+  grid-area: titulo1Sobremi;
+  text-align: center;
+  padding: 40px;
+}
+
+.sobreMisec1 {
+  grid-area: sobreMisec1;
+}
+
+.parrafo1Sobremi {
+  grid-area: parrafo1Sobremi;
+  font-size: medium;
+  padding: 30px;
+}
+
+.titulo2Sobremi {
+  grid-area: titulo2Sobremi;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.sobreMisec2 {
+  grid-area: sobreMisec2;
+}
+
+.parrafo2Sobremi {
+  grid-area: parrafo2Sobremi;
+  font-size: medium;
+  padding: 30px;
+}
+
+.titulo3Sobremi {
+  grid-area: titulo3Sobremi;
+  padding: 40px;
+  text-align: center;
+}
+
+.sobreMisec3 {
+  grid-area: sobreMisec3;
+}
+
+.parrafo3Sobremi {
+  grid-area: parrafo3Sobremi;
+  font-size: medium;
+  padding: 30px;
+}
+
+/* Fin pagina sobre mi */
+/* pagina como trabajo */
+/* pagina usa grid system de bootstrap solo modifique lo necesario*/
+.card {
+  position: static;
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.paddingContainer {
+  padding-left: 120px;
+}
+
+/* pagina recomendaciones */
+/* pagina usa grid system de bootstrap solo modifique lo necesario*/
+.tituloMisRecomendaciones {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subtituloMisRecomendaciones {
+  padding: 40px;
+}
+
+.libros {
+  width: 295px;
+  height: 500px;
+  padding: 10px;
+}
+
+.podcast {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.paddingcontainer2 {
+  padding-left: 120px;
+}
+
+/* Pagina de agendemos */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 600px;
+}/*# sourceMappingURL=estilos.css.map */

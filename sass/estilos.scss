@@ -1,0 +1,223 @@
+@import "fuentes";
+@import "generales";
+@import "mediaquerys";
+
+$fixed-sized: 100px;
+$base-color: #101d2d;
+$fixed-sized: 100px;
+
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+%textocentrado {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+%textoizquierda {
+    padding: 20px;
+    text-align: left;
+    font-size: medium;
+}
+
+.color {
+    background-color:  $base-color;
+    padding: 16px;
+}
+
+.logo {
+    @include size(40px, 40px);
+}
+
+
+header {
+    background-color: $base-color;
+    padding: 0px;
+    position: sticky;
+    top: 0px;
+}
+
+ul li {
+    font-size: 14px;
+    padding-right: 14px;
+    padding-left: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/*Paginahome*/
+
+.indexsec1 {
+    grid-area: indexsec1;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+    @extend %textocentrado
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+    @extend %textoizquierda
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    @extend %textocentrado
+}
+
+.indexsec2 {
+    grid-area: indexsec2;
+    img {
+        @include size(90%, 90%);
+        border-radius: 0px $fixed-sized $fixed-sized 0px;
+    }
+}
+
+.parrafo2 {
+    grid-area: parrafo2;
+    @extend %textoizquierda
+}
+
+.titulo3 {
+    grid-area: titulo3;
+    @extend %textocentrado
+}
+
+.indexsec3 {
+    grid-area: indexsec3;
+}
+
+.parrafo3 {
+    grid-area: parrafo3;
+    @extend %textoizquierda
+}
+
+.indexsec4 {
+    grid-area: indexsec4;
+    padding: 20px;
+}
+
+.parrafo4 {
+    font-size: medium;
+}
+
+.header {
+    grid-area: header;
+}
+
+/* Fin pagina de home */
+
+/* Inicio Pagina sobre mi */
+
+.titulo1Sobremi {
+    grid-area: titulo1Sobremi;
+    text-align: center;
+    padding: 40px;
+}
+
+.sobreMisec1 {
+    grid-area: sobreMisec1;
+}
+
+.parrafo1Sobremi {
+    grid-area: parrafo1Sobremi;
+    font-size: medium;
+    padding: 30px;
+}
+
+.titulo2Sobremi {
+        grid-area: titulo2Sobremi;
+        text-align: center;
+        padding-bottom: 40px;
+}
+
+.sobreMisec2 {
+    grid-area: sobreMisec2;
+}
+
+.parrafo2Sobremi {
+    grid-area: parrafo2Sobremi;
+    font-size: medium;
+    padding: 30px;
+}
+
+.titulo3Sobremi {
+    grid-area: titulo3Sobremi;
+    padding: 40px;
+    text-align: center;
+}
+
+.sobreMisec3 {
+    grid-area: sobreMisec3;
+}
+
+.parrafo3Sobremi {
+    grid-area: parrafo3Sobremi;
+    font-size: medium;
+    padding: 30px;
+}
+
+ /* Fin pagina sobre mi */
+
+ /* pagina como trabajo */
+/* pagina usa grid system de bootstrap solo modifique lo necesario*/
+
+.card{
+    position: static;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.paddingContainer{
+    padding-left: 120px;
+}
+
+/* pagina recomendaciones */
+/* pagina usa grid system de bootstrap solo modifique lo necesario*/
+
+.tituloMisRecomendaciones{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subtituloMisRecomendaciones{
+    padding: 40px;
+}
+
+.libros {
+    width: 295px;
+    height: 500px;
+    padding: 10px;
+
+}
+
+.podcast{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.paddingcontainer2 {
+    padding-left: 120px;
+}
+
+
+/* Pagina de agendemos */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 600px;
+}
