@@ -158,6 +158,16 @@ footer {
   }
 }
 
+/* Media query-recomendaciones*/
+.paddingcontainer2 {
+  padding-left: 0px;
+}
+@media (min-width: 500px) {
+  .paddingcontainer2 {
+    padding-left: 120px;
+  }
+}
+
 .titulo3, .titulo2, .titulo1 {
   padding: 20px;
   text-align: center;
@@ -337,10 +347,6 @@ a {
   width: 300px;
   height: 300px;
   padding: 10px;
-}
-
-.paddingcontainer2 {
-  padding-left: 120px;
 }
 
 /* Pagina de agendemos */
