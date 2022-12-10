@@ -179,7 +179,17 @@ $fixed-sized: 100px;
 }
 }
 
+/* Media query-Paginacomotrabajo*/
 
+
+
+.paddingContainer{
+    padding-left: 0px;
+
+    @media (min-width:500px){
+        padding-left: 120px;
+    }
+}
 
 
 

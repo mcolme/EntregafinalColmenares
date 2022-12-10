@@ -148,6 +148,16 @@ footer {
   }
 }
 
+/* Media query-Paginacomotrabajo*/
+.paddingContainer {
+  padding-left: 0px;
+}
+@media (min-width: 500px) {
+  .paddingContainer {
+    padding-left: 120px;
+  }
+}
+
 .titulo3, .titulo2, .titulo1 {
   padding: 20px;
   text-align: center;
@@ -302,10 +312,6 @@ a {
   position: static;
   border-radius: 0px 0px 10px 10px;
   margin-bottom: 20px;
-}
-
-.paddingContainer {
-  padding-left: 120px;
 }
 
 /* pagina recomendaciones */
